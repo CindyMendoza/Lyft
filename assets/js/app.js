@@ -4,7 +4,8 @@ function showtx() {
   document.getElementById('te').style.display="block";
   document.getElementById('tc').style.display="block";
 }
-
+function redl(){
+}
 function tt(){
   var dt = document.getElementsByClassName('tooltip');
   var st = document.getElementsByClassName('tooltiptext');
@@ -13,63 +14,45 @@ function tt(){
   var te = document.getElementById('te');
   var tc = document.getElementById('tc');
 
-  if (tp.value == "" ){
+  if ((tp.value == "" )&&(/[0-9]{9}/.test(tp.value) != true )){
     st[0].innerHTML="X";
     dt[0].style.visibility="visible";
     st[0].style.visibility="visible";
+    tp.style.borderBottomColor="red";
+  } else {
+    st[0].innerHTML="";
+    dt[0].style.visibility="hidden";
+    st[0].style.visibility="hidden";
+  }
 
-} else if (/[0-9]{9}/.test(tp.value) != true ){
+  if ((tn.value == "")&&(/[A-Z][a-z]+/.test(tn.value) == false )){
+    st[0].innerHTML="X";
+    dt[0].style.visibility="visible";
+    st[0].style.visibility="visible";
+    tn.style.borderBottomColor="red";
+  } else {
+    st[0].innerHTML="";
+    dt[0].style.visibility="hidden";
+    st[0].style.visibility="hidden";
+
+  }
+
+if ((te.value == "")&&(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/i.test(te.value) == false)){
   st[0].innerHTML="X";
   dt[0].style.visibility="visible";
   st[0].style.visibility="visible";
-
-} else {
-  st[0].innerHTML="";
-  dt[0].style.visibility="hidden";
-  st[0].style.visibility="hidden";
-
-}
-if (tn.value == ""){
-  st[0].innerHTML="X";
-  dt[0].style.visibility="visible";
-  st[0].style.visibility="visible";
-
-} else if (/[A-Z][a-z]+/.test(tn.value) == false ){
-  st[0].innerHTML="X";
-  dt[0].style.visibility="visible";
-  st[0].style.visibility="visible";
-
-} else {
-  st[0].innerHTML="";
-  dt[0].style.visibility="hidden";
-  st[0].style.visibility="hidden";
-
-}
-
-if (te.value == ""){
-  st[0].innerHTML="X";
-  dt[0].style.visibility="visible";
-  st[0].style.visibility="visible";
-
-} else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/i.test(te.value) == false){
-  st[0].innerHTML="X";
-  dt[0].style.visibility="visible";
-  st[0].style.visibility="visible";
-
+  te.style.borderBottomColor="red";
 } else {
   st[0].innerHTML="";
   dt[0].style.visibility="hidden";
   st[0].style.visibility="hidden";
 }
-if (tc.value == ""){
-  st[0].innerHTML="X";
-  dt[0].style.visibility="visible";
-  st[0].style.visibility="visible";
 
-} else if (/[A-Z][a-z]+/.test(tc.value) == false ){
+if ((tc.value == "")&&(/[A-Z][a-z]+/.test(tc.value) == false )){
   st[0].innerHTML="X";
   dt[0].style.visibility="visible";
   st[0].style.visibility="visible";
+  tc.style.borderBottomColor="red";
 
 } else {
   st[0].innerHTML="";
