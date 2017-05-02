@@ -21,13 +21,29 @@
         <video id="vdf" src="assets\img\img-lyft\hero-video.mp4" autoplay >
 
         </video>
-        <form id="fr" action="index.html" method="post">
+        <form id="fr"  method="post">
           <h1>turn miles into money</h1>
           <p>sign up to drive with lyft.</p>
-          <input type="text" name="" value="" placeholder="Phone number" onfocus="showtx()">
-          <input id="tn" type="text" name="" value="" placeholder="Name" style="display:none">
-          <input id="te" type="text" name="" value="" placeholder="Email" style="display:none">
-          <input id="tc" type="text" name="" value="" placeholder="City" style="display:none">
+          <input onkeyup="tt();" id="tp" type="text" name="" value="" placeholder="Phone number" onfocus="showtx();return false;" pattern="[0-9]{9}">
+          <div class="tooltip">
+            <span class="tooltiptext"></span>
+          </div>
+
+          <input onkeyup="tt();" id="tn" type="text" name="" value="" placeholder="Name" style="display:none" pattern="[A-Z][a-z]+">
+          <div class="tooltip">
+            <span class="tooltiptext"></span>
+          </div>
+
+          <input onkeyup="tt();" id="te" type="text" name="" value="" placeholder="Email" style="display:none" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$">
+          <div class="tooltip">
+            <span class="tooltiptext"></span>
+          </div>
+
+          <input onkeyup="tt();" id="tc" type="text" name="" value="" placeholder="City" style="display:none" pattern="[A-Z][a-z]+">
+          <div class="tooltip">
+            <span class="tooltiptext"></span>
+          </div>
+
           <button type="submit" name="button">Become a driver</button>
           <a href="#">Sign up to ride</a>
           <p class="ff">already applied? check the status of your application here.</p>
