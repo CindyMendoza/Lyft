@@ -6,137 +6,156 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lyft</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/img/luftico.png" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <section id="form-video">
       <nav>
-
-      </nav>
-    </header>
-    <section class="sec" id="s1">
-        <video id="vdf" src="assets\img\img-lyft\hero-video.mp4" autoplay >
-
-        </video>
-        <form id="fr"  method="post">
-          <h1>turn miles into money</h1>
-          <p>sign up to drive with lyft.</p>
-          <input  id="tp" type="text" name="" value="" placeholder="Phone number" onfocus="showtx();tt()" pattern="[0-9]{9}">
-          <div class="tooltip">
-            <span class="tooltiptext"></span>
-          </div>
-
-          <input onfocus="tt()" id="tn" type="text" name="" value="" placeholder="Name" style="display:none" pattern="[A-Z][a-z]+">
-          <div class="tooltip">
-            <span class="tooltiptext"></span>
-          </div>
-
-          <input onfocus="tt()" id="te" type="text" name="" value="" placeholder="Email" style="display:none" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$">
-          <div class="tooltip">
-            <span class="tooltiptext"></span>
-          </div>
-
-          <input onfocus="tt()" id="tc" type="text" name="" value="" placeholder="City" style="display:none" pattern="[A-Z][a-z]+">
-          <div class="tooltip">
-            <span class="tooltiptext"></span>
-          </div>
-
-          <button type="submit" name="button">Become a driver</button>
-          <a href="#">Sign up to ride</a>
-          <p class="ff">already applied? check the status of your application here.</p>
-          <P class="ff">Earn money for inviting friends to drive.Learn more.</P>
-
-        </form>
-
-    </section>
-    <section class="sec" id="s2">
-      <article id="a2">
-        <h1>a ride in minutes</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h1>serious about safety</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h1>happy drivers, happy riders</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      </article>
-      <figure id="f2">
-        <img src="assets\img\img-lyft\phone.png" alt="">
-      </figure>
-    </section>
-    <section class="sec">
-      <article class="">
-        <h1>amplify your ride</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </article>
-      <figure>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>
+    		<img src="assets/img/logo-white.png" alt="logo">
+    		<ul>
+    			<li><a>Drive</a></li>
+    			<li><a>Explore</a></li>
+    			<li><a>Help</a></li>
+    			<li class="log-in"><a>Log in</a></li>
+    		</ul>
+    	</nav>
+      <video autoplay="autoplay">
+        <source src="assets/img/hero-video.mp4" type="video/mp4"></source>
       </video>
-      </figure>
+      <form id="form">
+          <h1 class="txt-purple">TURN MILES<br>INTO MONEY</h1>
+          <h6 class="txt-purple">SIGN UP TO DRIVE WITH LYFT.</h6>
+          <div class="">
+            <input id="phone-number" type="text" placeholder='Phone Number'>
+            <img class='ico-error' src="assets/img/error.png" alt="">
+          </div>
+          <div class="input-oculto">
+            <input id="name" type="text" placeholder='Name'>
+            <img class='ico-error' src="assets/img/error.png" alt="">
+          </div>
+          <div class="input-oculto">
+            <input id="email" type="text" placeholder='Email'>
+            <img class='ico-error' src="assets/img/error.png" alt="">
+          </div>
+          <div class="input-oculto">
+            <input id="city" type="text" placeholder='City'>
+            <img class='ico-error' src="assets/img/error.png" alt="">
+          </div>
+          <button id="submit">Become a driver</button>
+          <a href="">Sign Up to Ride</a>
+          <p class="p-bottom">Already applied? Check the status of your application here</p>
+          <p class="p-bottom">Earn money  for inviting friends to drive. Learn more.</p>
+        </form>
     </section>
-    <section class="sec">
-      <figure>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
-      </figure>
-      <article class="">
-        <h1>june</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      </article>
-    </section>
-    <section class="sec">
-      <article class="">
-        <h1>a good think going</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </article>
-      <figure>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>
-      </figure>
-    </section>
-    <footer>
-      <div class="df">
-        <p>LOGIN</p>
-        <a href="#">help</a>
-        <a href="#">cities</a>
-        <a href="#">airports</a>
-        <a href="#">fare estimate</a>
-      </div>
-      <div class="df">
-        <p>PARTNER</p>
-        <a href="">t1</a>
-        <a href="">t2</a>
-        <a href="">t3</a>
-        <a href="">t4</a>
-
-
-      </div>
-      <div class="df">
-        <p>LEARN</p>
-        <a href="">t1</a>
-        <a href="">t2</a>
-        <a href="">t3</a>
-        <a href="">t5</a>
-
-
-      </div>
-      <div class="df">
-        <div class="fi">
-          <img src="assets\img\img-lyft\apple-store.svg" alt="">
-        </div>
-        <div class="fi">
-          <img src="assets\img\img-lyft\google-play.png" alt="">
+    <section id="info">
+        <div id="txt-info">
+          <div class="">
+            <h1>A RIDE IN MINUTES</h1>
+            <p>Request a ride and you'll be on your way in minutes<br>Request. Ride. Repeat.</p>
+          </div>
+          <div class="">
+            <h1>SERIOUS ABOUT SAFETY</h1>
+            <p>From knowing the color of you're drivers car to our 24/7<br>Trust & Safety Team, we got you.</p>
+          </div>
+          <div class="">
+            <h1>HAPPY DRIVERS.<br>HAPPY RIDERS.</h1>
+            <p>Ride with us and you'll see why 9 out of 10 rides end with five <br>stars.</p>
+          </div>
 
         </div>
-        <div class="fi">
-          <img src="assets\img\img-lyft\microsoft.png" alt="">
+        <div class="img-movil">
+          <img src="assets/img/phone.png" alt="phone" style="width:100%; height:100%;">
         </div>
+    </section>
+    <section id="v1">
+  			<div class="t1">
+  				<p>Watch</p>
+  				<h1>AMPLIFY YOUR RIDE</h1>
+          <br>
+          <br>
+  				<p>Lyft’s new emblem, Amp, is the secret to smooth pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</p>
+  			</div>
+        <div class="v1">
+            <iframe style="width:100%; height:100%;" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="v2">
+      <div class="v2">
+        <iframe style="width:100%; height:100%;" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="t2">
+        <p>Watch</p>
+        <h1>JUNE</h1>
+        <br>
+        <br>
+        <p>In an animated short film by Academy Award-winner John Kahrs, a lonely widow in historic South Chicago is empowered to start sharing the ride — and sharing her life, too.</p>
+      </div>
+    </section>
+    <section id="v3">
+      <div class="t3">
+        <p>Watch</p>
+        <h1>A GOOD THING GOING</h1>
+        <br>
+        <br>
+        <p>Launching on TV and online, “Ride on the Bright Side” shows how Lyft continues to prioritize happy drivers, short ETAs, and safety.</p>
+      </div>
+      <div class="v3">
+        <iframe style="width:100%; height:100%;" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="d1">
+        <ul>
+          <li>LOG IN</li>
+          <li>Help</li>
+          <li>Cities</li>
+          <li>Airport</li>
+          <li>Fare Stimate</li>
+        </ul>
+        <ul>
+          <li>PARTNER</li>
+          <li>Partnerships</li>
+          <li>Enterprise</li>
+          <li>Ambassadors</li>
+          <li>Developers</li>
+        </ul>
+        <ul>
+          <li>LEARN</li>
+          <li>Safety</li>
+          <li>Blog</li>
+          <li>Press</li>
+          <li>Careers</li>
+        </ul>
+        <ul>
+          <li>
+            <div class="ico-foo">
+              <img style="width: 100%;height: 100%;" src="assets/img/apple-store.svg" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="ico-foo">
+              <img style="width: 100%;height: 100%;" src="assets/img/google-play.png" alt="">
+            </div>
+          </li>
+          <li>
+            <div class="ico-foo">
+              <img style="width: 100%;height: 100%;" src="assets/img/microsoft.png" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="d2">
+        <div class="rs">
+          <span class="icon-facebook-with-circle"></span>
+          <span class="icon-instagram-with-circle"></span>
+          <span class="icon-twitter-with-circle"></span>
+       </div>
+        <hr>
+        <p class="copyright">&#169; 2017 Lyft, Inc.TermsPrivacy</p>
       </div>
     </footer>
-
-
-
-    <script type="text/javascript" src="assets/js/app.js">
-
-    </script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
   </body>
 </html>
