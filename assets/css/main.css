@@ -6,6 +6,8 @@ body, body *{
 }
 /*NAV SECTION*/
 nav{
+  -webkit-transition: all 0.8ms; /* Safari 3.1 to 6.0 */
+  transition: all 0.8ms ease 0.8ms;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
@@ -26,13 +28,16 @@ nav ul li{
 }
 nav ul li a{
 	text-decoration: none;
-	color: white;
 }
-.log-in{
-	border:1px solid white;
+.a{
+  color: white;
+}
+.log-in, .sing-up{
 	padding: 10px 15px;
 	border-radius: 8px;
+  border: 1px solid white;
 }
+
 /*video y form*/
 video{
 	width: 100%;
@@ -71,6 +76,7 @@ video{
 	background-color: #FF00bf;
 	border-radius: 7px;
   display: inline-block;
+  padding: 10px 5px;
 }
 #form a{
 	color: #728099;
@@ -82,14 +88,14 @@ video{
   font-size: 8px;
 }
 .error-input{
-	border: solid red;
-	border-width: 0 0 1px 0;
+	border-bottom: 1px solid red !important;
 }
 .ico-error{
 	position: absolute;
 	right: 0;
-	top: 0;
+	bottom: 0;
 	width: 25px;
+  height: auto;
 	display: none;
 }
 .input-oculto{
